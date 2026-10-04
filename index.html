@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nasser Alsarabi — React Front-End Developer & Power Apps Specialist based in Dubai, UAE." />
-    <title>Nasser Alsarabi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Nasser Alsarabi | Software Development, Business & Data Analysis</title>
+    <meta name="description" content="Nasser Alsarabi — Business Information Technology graduate building full-stack web apps (React, TypeScript, PostgreSQL), business process automation (n8n, Power Platform) and Power BI dashboards. Based in Dubai, UAE and Amman, Jordan." />
+    <meta name="author" content="Nasser Alsarabi" />
+    <meta name="theme-color" content="#070b10" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- Link previews (LinkedIn, WhatsApp, X, Slack…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nasser Alsarabi" />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:title" content="Nasser Alsarabi | Software Development, Business & Data Analysis" />
+    <meta property="og:description" content="Full-stack web apps, process automation and data dashboards. Based in Dubai & Amman — available immediately." />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nasser Alsarabi — Software Development, Business Analysis, Data Analysis" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nasser Alsarabi | Software Development, Business & Data Analysis" />
+    <meta name="twitter:description" content="Full-stack web apps, process automation and data dashboards. Based in Dubai & Amman." />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.png" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured data so search engines understand who this page is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nasser Alsarabi",
+        "url": "%VITE_SITE_URL%/",
+        "image": "%VITE_SITE_URL%/nasser-alsarabi.webp",
+        "jobTitle": "Software & Automation Developer",
+        "description": "Business Information Technology graduate focused on software development, business analysis and data analysis.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Princess Sumaya University for Technology"
+        },
+        "address": [
+          { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+          { "@type": "PostalAddress", "addressLocality": "Amman", "addressCountry": "JO" }
+        ],
+        "knowsLanguage": ["Arabic", "Romanian", "English"],
+        "knowsAbout": [
+          "Software Development", "React", "TypeScript", "Node.js", "PostgreSQL", "Python", "SQL",
+          "Business Analysis", "Process Automation", "n8n", "Power Apps", "Power Automate", "Power BI", "Data Analysis"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/nasser-alsarabi/",
+          "https://github.com/Sarabi-N"
+        ]
+      }
+    </script>
+
+    <script>
+      // Apply the saved theme before first paint to avoid a flash
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
